@@ -69,6 +69,10 @@ local keys = {
    { key = '[',          mods = mod.SUPER_REV, action = act.MoveTabRelative(-1) },
    { key = ']',          mods = mod.SUPER_REV, action = act.MoveTabRelative(1) },
 
+   -- tab: title
+   { key = '0',          mods = mod.SUPER,     action = act.EmitEvent('manual-update-tab-title') },
+   { key = '0',          mods = mod.SUPER_REV, action = act.EmitEvent('reset-tab-title') },
+
    -- window --
    -- spawn windows
    { key = 'n',          mods = mod.SUPER,     action = act.SpawnWindow },
